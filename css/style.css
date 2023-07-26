@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif&family=Poppins&display=swap');
+
+:root {
+    --first-font : 'Montserrat', sans-serif;
+    --seccond-font : 'Poppins', sans-serif;
+    --third-font : 'PT Serif', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1200px;
+    padding: 24px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    background-color: aqua;
+}
+
+header {
+    /* background-color: antiquewhite; */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 96px;
+    justify-content: space-between;
+}
+
+.title-header {
+    font-family: var(--third-font);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: -1.62px;
+    /* background-color: aquamarine; */
+}
+
+.desc-header h2 {
+    font-family: var(--seccond-font);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.desc-header p {
+    font-family: var(--seccond-font);
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 439px;
+}
+
+main {
+    display: block;
+    margin: 0 auto;
+    align-items: center ;
+}
+
+.team-image {
+    display: flex;
+    gap: 92px;
+    padding: 10px;
+    /* background-color: blue; */
+}
+
+.team-image p{
+    margin-bottom: 66px;
+    font-family: var(--seccond-font);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.desc-vertical {
+    writing-mode: vertical-lr;
+    position: absolute; 
+}
+
+.team1,
+.team2,
+.team3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.team2 {
+    margin-top: 97.5px;
+}
+
+.photo {
+    max-width: 238px;
+}
